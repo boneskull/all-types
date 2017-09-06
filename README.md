@@ -1,6 +1,6 @@
 # all-types
 
-> All DefinitelyTyped type definitions for IDEs
+> All DefinitelyTyped typedefs, installed globally, for WebStorm & other JetBrains IDEs
 
 ## Motivation
 
