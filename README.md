@@ -29,17 +29,17 @@ To get this working, you need to add a new "JavaScript library" to your IDE.  Th
 1. Load a Node.js or JavaScript project.
 2. Ensure the Node.js plugin is installed (it probably is).
 3. Open **Preferences**.
-4. Navigate to **Languages & Frameworks > JavaScript > Libraries**.
-  ![screenshot](https://cldup.com/kCR2jZOSsX.png)
-5. Click **Add**:
+4. Navigate to **Languages & Frameworks > JavaScript > Libraries**.  
+    ![screenshot](https://cldup.com/kCR2jZOSsX.png)
+5. Click **Add**:  
     ![screenshot](https://cldup.com/1JrQDSz3t2.png)
-6. In the dialog, configure like so:
-    ![screenshot](https://cldup.com/Fs_pASpv4z.png)
+6. In the dialog, configure like so:  
+    ![screenshot](https://cldup.com/Fs_pASpv4z.png)  
     1. Set **Name** to "types" or "all-types" (up to you).
     2. Set **Framework type** to **node_modules**.
     3. Set **Visibility** to **Global**.
-7. Click the **+** as shown below, then select **Attach Directories...**.
-    ![screenshot](https://cldup.com/fxcB2GIvVN.png)
+7. Click the **+** as shown below, then select **Attach Directories...**.  
+    ![screenshot](https://cldup.com/fxcB2GIvVN.png)  
 8. In the file chooser, navigate to your global modules dir.
 
     > This is usually something like `/usr/local/lib/node_modules` or `/usr/lib/node_modules`.  You can print this by executing `npm config get prefix` then  appending `lib/node_modules` (or just `node_modules` if on Windows).  
@@ -53,13 +53,13 @@ To get this working, you need to add a new "JavaScript library" to your IDE.  Th
     > You will probably want to get types for the Node.js core modules--but you may not want *all* of them.  So, don't add `@types/node`; instead, add `@types/node/v6` or `@types/node/v4` depending on your version.  As of this writing, `v8` was not available, so I just chose `v7`.
 
     You don't have to choose them all now--you can go back and add more later!  Pick a handful.  When finished, click **OK**.
-9. Now, you will need to tell WebStorm the "scope" of this library.  Click **Manage Scopes...**:
+9. Now, you will need to tell WebStorm the "scope" of this library.  Click **Manage Scopes...**:  
     ![screenshot](https://cldup.com/SEwRMMAK4j.png)
-10. Click on the first row, in the **Library** column.  You should see something like `<your-project>/nodemodules` already checked.  Find `all-types`, then select it.
+10. Click on the first row, in the **Library** column.  You should see something like `<your-project>/nodemodules` already checked.  Find `all-types`, then select it.  
     ![screenshot](https://cldup.com/a79zWYevyt.png)
-> `all-types` will be whatever you named it, but `all-types/nodemodules` will be `<your-project>/nodemodules`; I just happened to take this screenshot from this project!
+    > `all-types` will be whatever you named it, but `all-types/nodemodules` will be `<your-project>/nodemodules`; I just happened to take this screenshot from this project!
 11. Click **OK**.  Then click **OK** again to apply & save your preferences.
-12. To verify this worked, take a look at the **External libraries** in your project tree.  If it looks like this, you're set:
+12. To verify this worked, take a look at the **External libraries** in your project tree.  If it looks like this, you're set:  
     ![screenshot](https://cldup.com/bV47nLSlAf.png)
 13. Enjoy better type inference and code completion!
 
