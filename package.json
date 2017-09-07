@@ -1,6 +1,6 @@
 {
   "name": "all-types",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "All DefinitelyTyped typedefs, installed globally, for WebStorm & other JetBrains IDEs",
   "bin": {
     "update-types": "bin/update-types.js"
